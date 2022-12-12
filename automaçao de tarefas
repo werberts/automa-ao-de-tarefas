@@ -1,1 +1,57 @@
+import pyautogui as posicaodoMause
+import datetime
+import selenium
 
+
+
+def documentacao_solidaria ():
+    posicaodoMause.sleep(2) # tempo para iniciar funçao
+
+    # funçao para definIR  O GOOGLE  CHROME
+
+    posicaodoMause.moveTo(x=557, y=755)
+    posicaodoMause.click(x=557, y=755)  # funçao para o mouse clicar na aba
+    posicaodoMause.sleep(2)  # ESSA FUNÇAO E PARA DEFINIR O TEMPO DE EXECUÇAO
+
+    return (' finalizada... ')
+
+
+#menu principal
+def menu_principal():
+
+    titulo_principal=' SEJA BEM VINDO AUTO_TAREFA '
+    linha=('---')*50
+    print(linha.center(50))
+    print(titulo_principal.center(100))
+    print(linha.center(50))
+    print('1 Enviar Documentaçao solidaria \n2 baixar e corta olerite \n3 enviar lembramça  de assinatura do olerite \n0 sair')
+    entrada_de_opcao=int(input('Digite a opçao desejada : '))
+
+    #enviar documentaçao solidaria para o cliente
+
+    if entrada_de_opcao==1:
+        print(documentacao_solidaria)
+    else:
+        print (entrada_de_opcao)
+        return
+
+    #enviar e salvar no drive a documenteçao solidaria
+
+    if olerite==2:
+        print(enviar_olerite)
+    else:
+        print (entrada_de_opcao)
+        return
+
+    #essa funçao e para chamar a  funçao de enviar mensagem via gmail e  whatssap para funcionario para assinar o olerite
+
+    if enviar_lembranca==3:
+        print(enviar_lembranca)
+    else:
+        print (entrada_de_opcao)
+        return
+
+
+
+
+print(menu_principal())
